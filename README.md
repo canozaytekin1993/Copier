@@ -1,20 +1,20 @@
-###Copier App
+#Copier App
 Note
 If you'd like to store all the options in a file and have copier app read the options from that file, check out the branch configfile-experiment. The further development will continue from that branch until it is fully merged into master branch. For more information, take a look at the readme.md file from configfile-experiment branch.
 
-What is it?
+#What is it?
 A cross-platform (works on Windows, Linux, and Mac) and open-source file watcher and copier application. It allows you to specify folders/files to track and copies them to a target location. It continuously watches changes on the specified files in the background and copies them to the destination directory.
 
 The application has been developed with .NET Core technology and depends on the existence of .NET Core framework on the target machine where it is being used. You can simply download the framework from http://dot.net.
 
 Note: The future release will be built without .net core dependency.
 
-How to use?
+#How to use?
 Currently, it is a command-line application; therefore, you need to be passing a few options to be able to tell what to copy, the source directory, and the destination directory.
 
 The simple way to find all the available options is to run the tool with --help flag such as dotnet Copier.dll --help.
 
-An example:
+#An example:
 A simple way to start off with this tool would be as follows:
 
 dotnet Copier.dll -s "C:\source-folder\" -f "*.txt" -d "C:\destination-folder"
@@ -23,11 +23,11 @@ dotnet Copier.dll -s "C:\source-folder\" -f "*.txt" -d "C:\destination-folder"
 -d is the destination folder where the files will be copied over.
 By default, if a file already exists in the destination directory, the file won't be copied unless told otherwise with -o flag. Check out --help for more information about all the available options.
 
-Delayed Copy
+#Delayed Copy
 One of the major features of this tool is to be able to queue all the files that are changed and copy them to the destination folder with a given delay. For instance, if you specify -t 5000 option along with the other required options when running the application, it will wait for 5 seconds before copying all the changed files that it has been queuing. An example would look like as following:
 
 dotnet Copier.dll -s "C:\source-folder\" -f "*.txt" -d "C:\destination-folder" -t 5000
-Plugins
+#Plugins
 Copier app supports plugin integration. You can easily develop your own plugins and have them executed before and after the copy operations. All you have to do is to reference CopierPluginBase in your dotnet core class library, and implement IPostCopyEventListener and|or IPreCopyEventListener interfaces. Once you build your class library, put the .dll file under plugins folder in the Copier app installation location. If you don't see this folder, simply create it where the Copier.dll file exists.
 
 Having issues?
