@@ -34,7 +34,7 @@ One of the major features of this tool is to be able to queue all the files that
 Copier app supports plugin integration. You can easily develop your own plugins and have them executed before and after the copy operations. All you have to do is to reference `CopierPluginBase` in your dotnet core class library, and implement `IPostCopyEventListener` and|or `IPreCopyEventListener` interfaces. Once you build your class library, put the `.dll` file under `plugins` folder in the Copier app installation location. If you don't see this folder, simply create it where the Copier.dll file exists.
 
 ### Having issues?
-Copier app has been developed with an in-depth logging mechanism. You can see all the steps it takes when running it with the debug `-e` flag. If you would like to see more than regular messages but less than debug messages, use `-v` verbose flag. If you still have issues, create a new issue at https://github.com/tarikguney/copier/issues or please send a pull request with the fix. I'd love to see other people's contributions.
+Copier app has been developed with an in-depth logging mechanism. You can see all the steps it takes when running it with the debug `-e` flag. If you would like to see more than regular messages but less than debug messages, use `-v` verbose flag. If you still have issues, create a new issue at https://github.com/canozaytekin1993/Copier/issues or please send a pull request with the fix. I'd love to see other people's contributions.
 
 ## Roadmap
 Accepts all of the arguments from a config file. An sample command would look like the following: `dotnet Copier.dll -f Config.txt`. `-f` is the path of the config file.
