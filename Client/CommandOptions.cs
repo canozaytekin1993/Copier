@@ -18,6 +18,7 @@ using CommandLine.Text;
 
 namespace Client
 {
+    [Verb("watch", HelpText = "If you want to pass options manually, use this command to begin watches.")]
     public class CommandOptions
     {
         [Option('s', "sourceDirectoryPath", HelpText =
@@ -39,8 +40,11 @@ namespace Client
             HelpText = "If passed true, more information will be outputted to the console.")]
         public bool Verbose { get; set; }
 
-        [Option('d', "debug", Default = false, Required = false, HelpText = "Shows debug information")]
+        [Option('e', "debug", Default = false, Required = false, HelpText = "Shows debug information")]
         public bool Debug { get; set; }
+
+        [Option('t', "delay", Default = 0, Required = false, HelpText = "Delays copy operation for a given time.")]
+        public int Delay { get; set; }
 
         [Usage]
         public static IEnumerable<Example> Examples => new List<Example>
