@@ -41,4 +41,4 @@ Accepts all of the arguments from a config file. An sample command would look li
 
 ## How will you feel when using this tool?
 
-![GitHub Logo](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
+![GitHub Logo](https://media.giphy.com/media/l1IYbqyLSloejiLok/giphy.gif)
