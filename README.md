@@ -1,5 +1,6 @@
 #Copier App
-Note
+#Note
+
 If you'd like to store all the options in a file and have copier app read the options from that file, check out the branch configfile-experiment. The further development will continue from that branch until it is fully merged into master branch. For more information, take a look at the readme.md file from configfile-experiment branch.
 
 #What is it?
