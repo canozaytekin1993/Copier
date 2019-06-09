@@ -1,4 +1,5 @@
-# Copier App
+![2](https://user-images.githubusercontent.com/27735701/59155366-96faa880-8a7f-11e9-9b00-f27161d87f3e.png)
+
 ## Note
 
 If you'd like to store all the options in a file and have copier app read the options from that file, check out the branch `configfile-experiment`. The further development will continue from that branch until it is fully merged into master branch. For more information, take a look at the `readme.md` file from `configfile-experiment` branch.
